@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Cabecalho 
-      logo="logo.svg" 
+      logo="components/Logo.svg" 
       descricao="logo" 
       titulo="Gerenci" 
       menu1="adicionar" 
@@ -17,9 +17,9 @@ function App() {
       <Conteudo tituloPagina="Bem vindo ao Gerenciador de Favoritos"/>
       
       <Rodape 
-      social1="./components/Elementos/facebook.svg/150" 
-      social2="./components/Elementos/Twitter.svg/150"
-      social3="./components/Elementos/Instagram.svg/150"/>
+      social1="facebook.svg" 
+      social2="Twitter.svg"
+      social3="Instagram.svg"/>
 
     </div>
   );
