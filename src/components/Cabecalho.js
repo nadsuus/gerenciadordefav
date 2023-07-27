@@ -1,4 +1,4 @@
-import styles from './Cabecalho.module.css'
+import styles from './EstilosPaginas/Cabecalho.module.css'
 
 function Cabecalho({logo,descricao,titulo,menu1,menu2}){
     return(

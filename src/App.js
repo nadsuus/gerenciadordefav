@@ -1,14 +1,13 @@
 import './App.css';
 import Cabecalho from './components/Cabecalho';
-import Conteudo from './components/Conteudo';
+import Conteudo from './components//Conteudo';
 import Rodape from './components/Rodape';
 
 function App() {
 
   return (
     <div className="App">
-      <Cabecalho 
-      logo="components/Logo.svg" 
+      <Cabecalho logo="Logo.svg" 
       descricao="logo" 
       titulo="Gerenci" 
       menu1="adicionar" 
@@ -19,7 +18,8 @@ function App() {
       <Rodape 
       social1="facebook.svg" 
       social2="Twitter.svg"
-      social3="Instagram.svg"/>
+      social3="Instagram.svg"
+      />
 
     </div>
   );
