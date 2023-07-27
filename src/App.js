@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Cabecalho from './components/Cabecalho';
+import Conteudo from './components/Conteudo';
+import Rodape from './components/Rodape';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cabecalho 
+      logo="logo.svg" 
+      descricao="logo" 
+      titulo="Gerenci" 
+      menu1="adicionar" 
+      menu2="ajuda"/>
+
+      <Conteudo tituloPagina="Bem vindo ao Gerenciador de Favoritos"/>
+      
+      <Rodape 
+      social1="./components/Elementos/facebook.svg/150" 
+      social2="./components/Elementos/Twitter.svg/150"
+      social3="./components/Elementos/Instagram.svg/150"/>
+
     </div>
   );
 }
