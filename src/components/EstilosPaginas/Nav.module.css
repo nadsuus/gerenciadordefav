@@ -1,0 +1,18 @@
+.logo{
+    width: 100px;
+  }
+  .titulo{
+    color: rgb(255, 255, 255);
+    flex-basis: 25px;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    margin-bottom: 2px;
+  }
+
+  .nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  }

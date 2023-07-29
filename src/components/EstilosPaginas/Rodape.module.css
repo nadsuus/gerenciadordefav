@@ -1,11 +1,15 @@
 .footer{
-  color: #000000;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 8vh;
   flex-wrap: nowrap;
   flex-direction: row;
-  background-color: bisque;
-  padding: 15px;
+  background-color: #19335a;
+  padding: 0rem 10rem 0rem 10rem;
+}
+
+.social{
+width: 20px;
 }

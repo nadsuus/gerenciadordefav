@@ -11,9 +11,9 @@ function Data() {
 function Rodape({social1,social2,social3,descRodape}){
     return(
         <div className={styles.footer}>{Rodape}
-            <img src={social1} alt={descRodape}></img>
-            <img src={social2} alt={descRodape}></img>
-            <img src={social3} alt={descRodape}></img>
+            <img className={styles.social} src={social1} alt={descRodape}></img>
+            <img className={styles.social} src={social2} alt={descRodape}></img>
+            <img className={styles.social} src={social3} alt={descRodape}></img>
             <p> {Data()} </p>
         </div>
     )

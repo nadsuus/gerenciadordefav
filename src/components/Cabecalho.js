@@ -1,11 +1,15 @@
 import styles from './EstilosPaginas/Cabecalho.module.css'
+import Nav from './Nav'
 
-function Cabecalho({logo,descricao,titulo,menu1,menu2}){
+function Cabecalho({menu1,menu2}){
     return(
 
 <div className={styles.navBar}>
-    <img className={styles.logo} src={logo} alt={descricao}></img>
-    <h2>{titulo}</h2>
+    <Nav
+    logo="Logo.svg" 
+    descricao="logo" 
+    titulo="Gerenci"
+    />
     <p>{menu1}</p>
     <p>{menu2}</p>
 </div>

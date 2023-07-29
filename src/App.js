@@ -7,9 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      <Cabecalho logo="Logo.svg" 
-      descricao="logo" 
-      titulo="Gerenci" 
+
+      <Cabecalho  
       menu1="adicionar" 
       menu2="ajuda"/>
 
