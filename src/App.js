@@ -1,25 +1,20 @@
-import './App.css';
-import Cabecalho from './components/Cabecalho';
-import Conteudo from './components//Conteudo';
-import Rodape from './components/Rodape';
+import "./App.css";
+import Cabecalho from "./components/Cabecalho";
+import Conteudo from "./components//Conteudo";
+import Rodape from "./components/Rodape";
+import Estados from "./exemplos/Estados";
 
 function App() {
-
   return (
-    <div className="App">
+    <div>
+      {/* <Cabecalho menu1="adicionar" menu2="ajuda" />
+      <Conteudo tituloPagina="Bem vindo ao Gerenciador de Favoritos" />
+      <Rodape
+        social1="facebook.svg"
+        social2="Twitter.svg"
+        social3="Instagram.svg"/> */}
 
-      <Cabecalho  
-      menu1="adicionar" 
-      menu2="ajuda"/>
-
-      <Conteudo tituloPagina="Bem vindo ao Gerenciador de Favoritos"/>
-      
-      <Rodape 
-      social1="facebook.svg" 
-      social2="Twitter.svg"
-      social3="Instagram.svg"
-      />
-
+      <Estados />
     </div>
   );
 }
