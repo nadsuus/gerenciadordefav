@@ -10,12 +10,12 @@ const Estados = () => {
 
   function adicionaFavoritos(nome, url) {
     let favorito = { nome, url };
-    // Esses 3 pontos significa espalhar, se a gente usasse
-    favoritos.push(favorito);
-    setFavoritos(favoritos);
+    // favoritos.push(favorito);
+    // setFavoritos(favoritos);
     console.log(favoritos);
+    // Esses 3 pontos significa espalhar, se a gente usasse
     // vai da um erro pois
-    // setFavorito=(...favorito)
+    setFavoritos([...favoritos, favorito]);
   }
 
   function handleInput(nome) {
