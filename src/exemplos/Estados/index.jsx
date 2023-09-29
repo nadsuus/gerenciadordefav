@@ -38,12 +38,17 @@ const Estados = () => {
 
   return (
     <div>
-<ul>
-      {favoritos[0] !== undefined &&
-       favoritos.map((favorito) => (
-       <li> {favorito.nomeSite} : {favorito.urlSite} </li>)) }
-      
-</ul>
+      <dl>
+        {favoritos[0] !== undefined &&
+          favoritos.map((favorito) => (
+            < div>
+              <dt style={{ color: "white", backgroundColor: 'lightpink' }} key={favorito.nomeSite}> {favorito.nomeSite} </dt>
+              <dd style={{ color: "white" }} > {favorito.urlSite} </dd>
+            </div >
+          ))
+        }
+
+      </dl >
 
       <h1>Conteudo</h1>
 
@@ -69,7 +74,7 @@ const Estados = () => {
             }}
           />
 
-      <input type="button" value="salvar" onClick={() => salvarFavoritos()} />
+          <input type="button" value="salvar" onClick={() => salvarFavoritos()} />
         </form>
       </section>
       {/* <br />
@@ -95,7 +100,7 @@ const Estados = () => {
           <li>{elemento.nome}</li>
         ))}
       </ul> */}
-    </div>
+    </div >
   );
 };
 
