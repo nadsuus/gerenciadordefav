@@ -17,10 +17,28 @@ function CadastroUsuario() {
         setSenhaConfirmada('')
     }
     function salvarUsuario(nomeUsuario, emailUsuario, senhaUsuario) {
-        let usuario = { nomeUsuario, emailUsuario, senhaUsuario }
-        console.log(usuario)
-        localStorage.setItem("usuario", JSON.stringify(usuario))
-        limparCampos()
+
+        if (validacaoEmail(emailUsuario) == true) {
+
+            alert("Usuario Cadastrado com Sucesso")
+            let usuario = { nomeUsuario, emailUsuario, senhaUsuario }
+            console.log(usuario)
+            localStorage.setItem("usuario", JSON.stringify(usuario))
+            limparCampos()
+        } else {
+            alert("Confira o Campo Email")
+        }
+    }
+
+    function validacaoEmail(emailUsuario) {
+
+        if (emailUsuario.includes('@')) {
+            return true
+            console.log("True")
+        } else {
+            return false
+            console.log("False");
+        }
     }
 
     function validacaoSenha(senhaUsuario, senhaUsuarioConfirmada) {
@@ -51,11 +69,13 @@ function CadastroUsuario() {
                 <br />
                 <input
                     type='email'
-                    name='emailUsuario'
+                    id='emailUsuario'
+                    name='email'
                     value={emailUsuario}
                     onChange={(e) => setEmailUsuario(e.target.value)}
                 ></input>
                 <br />
+
 
                 <label>Senha:</label>
                 <br />
